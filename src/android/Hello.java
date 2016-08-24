@@ -12,7 +12,7 @@ public class Hello extends CordovaPlugin {
 
             int timeInMillis = data.getInt(0);
             SystemClock.sleep(timeInMillis);
-            callbackContext.success(message);
+            callbackContext.success("Slept: " + timeInMillis + "millis.");
 
             return true;
 
